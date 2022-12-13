@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Retro Land Mayhem";
+    src: url(./fonts/retro-land-mayhem.ttf);
+}
+
+.game-title {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    font-family: "Retro Land Mayhem";
+    font-size: 70px;
+    color: yellow;
+    margin-left: -30px;
+}
+.game-subtitle {
+    display: flex;
+    justify-content: center;
+    font-family: "Retro Land Mayhem";
+    font-size: 40px;
+    color: white;
+}
+.game-score {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    font-family: "Retro Land Mayhem";
+    font-size: 40px;
+    color: white;
+}
+.JS-text {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    font-family: "Retro Land Mayhem";
+    font-size: 70px;
+    color: black;
+    margin-left: 30px;
+}
+.game-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/main-background.png);
+    background-repeat: no-repeat;
+}
+#character {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/game-character.png);
+    background-size: 50px 50px;
+    position: absolute;
+    bottom: 85px;
+    left: 60px;
+}
+#jsLogo {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/JS-logo.PNG);
+    background-size: 50px 40px;
+    position: absolute;
+    bottom: 85px;
+    left: 1200px;
+    animation: jsMove 2s infinite linear;
+}
+@keyframes jsMove {
+    0% {
+        left: 1200px;
+    }
+    100% {
+        left: -50px;
+    }
+    
+}
+.jump {
+    animation: jump 1s linear;
+}
+@keyframes jump {
+    0% {
+        bottom: 70px;
+    }
+    30% {
+        bottom: 250px;
+    }
+    50% {
+        bottom: 200px;
+    }
+    80% {
+        bottom: 150px;
+    }
+    100% {
+        bottom: 70px;
+    }
+    
+}
